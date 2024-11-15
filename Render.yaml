@@ -13,3 +13,9 @@ services:
         value: cultural_heritage_db
       - key: DB_PASSWORD
         value: mJODIfEy8Aph5aEvHpJbmxosWQ9oPFsE
+      - key: DB_NAME
+        value: cultural_heritage_db
+      - key: DB_DRIVER
+        value: PostgreSQL
+      - key: DB_PORT
+        value: "5432"
