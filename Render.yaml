@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: codeigniter-app
+    env: php
+    buildCommand: ""
+    startCommand: php -S 0.0.0.0:10000 -t public
+    envVars:
+      - key: APP_ENV
+        value: production
+      - key: DB_HOST
+        value: dpg-csrscdt2ng1s73ad47o0-a
+      - key: DB_USERNAME
+        value: cultural_heritage_db
+      - key: DB_PASSWORD
+        value: mJODIfEy8Aph5aEvHpJbmxosWQ9oPFsE
