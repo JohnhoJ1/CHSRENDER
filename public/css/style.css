@@ -1,0 +1,418 @@
+:root {
+  --primary-color: #1a2238;
+  --secondary-color: #9daaf2;
+  --accent-color: #ff6a3d;
+  --background-color: #ffffff;
+  --text-color: #ffffff;
+  --muted-text-color: #666666;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Include padding and borders in element's total width and height */
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-size: 26px;
+  background-color: var(--background-color);
+  font-family: "Lato";
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  width: 100%; /* Ensure it spans the full width */
+  background-color: var(--background-color);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: top 0.3s;
+  z-index: 20; /* Set a higher z-index */
+}
+.hidden-header {
+  top: -100px; /* height of your header */
+}
+.logo {
+  font-size: 2rem;
+  font-weight: bolder;
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 5px;
+}
+
+.logo a {
+  text-decoration: none;
+  color: var(--primary-color);
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+}
+.nav-links li {
+  margin: 0 10px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #000;
+  display: block;
+}
+nav {
+  display: flex;
+  justify-content: space-evenly;
+  z-index: 20;
+  font-size: 1rem;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+nav ul li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+nav ul li a {
+  font-family: "Roboto";
+  font-weight: 100;
+  color: rgb(27, 26, 26);
+  text-decoration: none;
+  padding: 10px 15px;
+  transition: background 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: var(--primary-color);
+  background-color: var(--secondary-color);
+  border-radius: 8%;
+}
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+.hamburger span {
+  width: 25px;
+  height: 3px;
+  background: #000;
+  margin: 4px 0;
+  transition: transform 0.5s ease-in-out;
+}
+.nav-links.active {
+  display: block;
+  transform: translateX(0); /* Slide in to the screen */
+}
+@media (max-width: 900px) {
+  .nav-links {
+    height: 100vh;
+    display: none; /* Hide links by default */
+    flex-direction: column; /* Vertical on small screens */
+    position: absolute; /* Absolute positioning */
+    top: 60px; /* Below the header */
+    right: 0; /* Align to the right */
+    background-color: #ffffff; /* Background color */
+    width: 200px; /* Adjust width as needed */
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2);
+    padding: 20px; /* Add some padding */
+  }
+
+  .hamburger {
+    display: flex; /* Show hamburger on small screens */
+  }
+}
+
+.secondary-nav {
+  padding: 20px;
+  display: block;
+  text-align: start;
+  justify-content: center;
+  align-items: center;
+  background-color: #4e4a4ac5; /* or any color you prefer */
+  margin-top: 20px;
+}
+.secondary-nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  display: flex;
+}
+.secondary-nav-heading {
+  margin-bottom: 20px; /* Add some space below the heading and breadcrumb */
+}
+.secondary-nav h2 {
+  margin-bottom: 10px; /* Add some space below the heading */
+  font-size: 1.5em; /* Adjust font size as needed */
+  color: #333; /* Adjust color as needed */
+}
+.secondary-nav ul li a {
+  font-family: "Roboto";
+  font-weight: 600;
+  color: rgb(27, 26, 26);
+  text-decoration: none;
+  padding: 10px 15px;
+  transition: background 0.3s ease;
+}
+.secondary-nav {
+  position: relative;
+  margin-top: 10px; /* Add some space between main and secondary navs */
+  z-index: 10; /* Ensure it's not blocked by other elements */
+}
+.secondary-nav ul li a:hover {
+  background: rgba(
+    255,
+    255,
+    255,
+    0.3
+  ); /* Light transparent background on hover */
+}
+.breadcrumb-nav {
+  display: flex;
+  justify-content: left;
+  margin: 10px 0;
+  font-size: 0.9em;
+}
+.breadcrumb-nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+.breadcrumb-nav ul li {
+  display: inline;
+  margin: 0 5px;
+}
+
+.breadcrumb-nav ul li a {
+  color: #4ad7d1;
+  text-decoration: none;
+}
+
+.breadcrumb-nav ul li::after {
+  content: ">";
+  margin-left: 5px;
+}
+
+/* Slider styles */
+.imageslider {
+  position: relative;
+  height: 40vh; /* Default height */
+  margin: 0;
+  padding: 0;
+}
+
+.slide {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.slide-item {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  object-fit: cover; /* Maintain aspect ratio */
+  transition: transform 1s ease-in-out;
+}
+
+.slide-item.current {
+  transform: translateX(0);
+}
+
+.slide-item.next {
+  transform: translateX(100%);
+}
+
+.slide-item.prev {
+  transform: translateX(-100%);
+}
+
+/* Hero container styles */
+.hero-container {
+  position: relative;
+  overflow: hidden;
+  background-color: var(--primary-color);
+  height: 300px; /* Default height */
+  margin: 0;
+  padding: 0;
+}
+
+.hero-content {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: left;
+  color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  width: 90%; /* Default width */
+}
+
+.hero-content h1 {
+  font-size: 1.8rem;
+  padding-top: 5px;
+  padding-bottom: 18px;
+}
+
+.hero-content h1 span {
+  color: var(--secondary-color);
+}
+
+.hero-content p {
+  font-size: 1rem;
+}
+
+.hero-content .hero-button {
+  display: inline-flex;
+  align-items: center;
+  padding: 5px 15px;
+  margin-top: 20px;
+  background-color: var(--secondary-color);
+  color: white;
+  text-decoration: none;
+  font-size: 1.2em;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.hero-button:hover {
+  background-color: #369999;
+}
+
+.hero-button svg {
+  transition: transform 0.3s;
+}
+
+.hero-button:hover svg {
+  transform: translateY(4px); /* Arrow moves down slightly on hover */
+}
+
+.hero-button:hover {
+  background-color: #369999;
+}
+
+/* Larger screens */
+@media (min-width: 1024px) {
+  .imageslider {
+    height: 100vh; /* Larger height for larger screens */
+  }
+
+  .hero-container {
+    position: absolute; /* Position it over the image slider */
+    top: 30%; /* Align to the top of the image slider */
+    width: 60%; /* Ensure it spans the full width */
+    height: 300px; /* Ensure it spans the full height */
+    display: flex;
+    align-items: center; /* Center content vertically */
+    justify-content: center; /* Center content horizontally */
+    pointer-events: none; /* Make sure clicks pass through */
+  }
+
+  .hero-content {
+    top: 20px;
+    width: 100%; /* Smaller width on larger screens */
+    pointer-events: auto; /* Make sure clicks are captured */
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.content {
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 40px 20px;
+  max-width: 1200px;
+}
+.content h2 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  color: #4ad7d1;
+}
+
+.content p {
+  font-size: 1.2em;
+  line-height: 1.6;
+  margin-bottom: 30px;
+  color: #666;
+}
+
+.exhibits-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.exhibit-item {
+  background: white;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  width: 300px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.exhibit-item h2 {
+  font-size: 24px;
+  color: #4ad7d1;
+}
+
+.exhibit-item p {
+  color: #333;
+}
+
+.exhibit-item img {
+  max-width: 100%;
+  border-radius: 8px;
+  margin-top: 10px;
+}
+
+footer {
+  background-color: #001730;
+  padding: 10px;
+  font-size: 1rem;
+  text-align: center;
+  color: white;
+  width: 100%;
+  margin-top: auto;
+}
+
+@media (max-width: 768px) {
+  body {
+    font-size: 12px;
+  }
+  .hero h1 {
+    font-size: 2.8em;
+  }
+}
+@media (max-width: 480px) {
+  body {
+  }
+  nav ul li a {
+    font-size: 0.01rem;
+    display: none;
+  }
+  .hero h1,
+  h2 {
+    font-size: 0.5em; /* Further reduce size for mobile */
+  }
+}

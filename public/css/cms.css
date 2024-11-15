@@ -1,0 +1,111 @@
+:root {
+  --primary-color: #1a2238;
+  --transparent-primary-color: #1a2238a2;
+  --secondary-color: #9daaf2;
+  --accent-color: #ff6a3d;
+  --background-color: #ffffff;
+  --text-color: #ffffff;
+  --muted-text-color: #666666;
+  font-size: 16px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Include padding and borders in element's total width and height */
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  font-size: 26px;
+  background-image: url("https://www.stellantis.com/content/dam/stellantis-corporate/news/dashboard/dashboard-background-dx.jpg");
+  background-color: var(--background-color);
+  font-family: "Lato";
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  width: 100%; /* Ensure it spans the full width */
+  background-color: var(--background-color);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: top 0.3s;
+  z-index: 20; /* Set a higher z-index */
+}
+.hidden-header {
+  top: -100px; /* height of your header */
+}
+.logo {
+  font-size: 2rem;
+  font-weight: bolder;
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 5px;
+}
+
+.logo a {
+  text-decoration: none;
+  color: var(--primary-color);
+}
+
+.login-header {
+  padding: 15px;
+  margin: 0px;
+}
+.login-section {
+  margin-top: 200px;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  background-color: var(--primary-color);
+  color: var(--text-color);
+  margin: 10px;
+  width: 40vw;
+  height: 60vh;
+  border-radius: 10px;
+}
+.login-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 60vh;
+}
+
+input[type="text"],
+input[type="password"] {
+  width: calc(100% - 22px); /* Ensures the input fills the form width */
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #cccccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 16px;
+  background-color: #f9f9f9;
+  transition: border-color 0.3s, box-shadow 0.3s;
+} /* Input focus styles */
+input[type="text"]:focus,
+input[type="password"]:focus {
+  border-color: #4ad7d1; /* Custom color on focus */
+  box-shadow: 0 0 5px rgba(74, 215, 209, 0.5); /* Subtle shadow effect */
+  outline: none; /* Remove the default outline */
+}
+
+button:hover {
+  background-color: #414a66;
+}
+button {
+  background-color: #6d7dac;
+  color: #ffffff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}

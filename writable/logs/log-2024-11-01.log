@@ -1,0 +1,183 @@
+CRITICAL - 2024-11-01 18:17:13 --> Error: Call to undefined function render_secondary_nav()
+[Method: GET, Route: exhibits]
+in APPPATH\Views\exhibits.php on line 15.
+ 1 SYSTEMPATH\View\View.php(234): include()
+ 2 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('exhibits', [], true)
+ 4 APPPATH\Controllers\ExhibitsController.php(16): view('exhibits', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ExhibitsController->index()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ExhibitsController))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-11-01 18:23:15 --> ErrorException: Undefined variable $secondary_nav_items
+[Method: GET, Route: exhibits]
+in APPPATH\Views\exhibits.php on line 16.
+ 1 APPPATH\Views\exhibits.php(16): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $secondary_nav_items', 'C:\\xampp\\htdocs\\CodeIgnitorCHS\\app\\Views\\exhibits.php', 16)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\CodeIgnitorCHS\\app\\Views\\exhibits.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('exhibits', [], true)
+ 5 APPPATH\Controllers\ExhibitsController.php(16): view('exhibits', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ExhibitsController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ExhibitsController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-11-01 18:25:54 --> ErrorException: Undefined variable $secondary_nav_items
+[Method: GET, Route: exhibits]
+in APPPATH\Views\exhibits.php on line 16.
+ 1 APPPATH\Views\exhibits.php(16): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $secondary_nav_items', 'C:\\xampp\\htdocs\\CodeIgnitorCHS\\app\\Views\\exhibits.php', 16)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\CodeIgnitorCHS\\app\\Views\\exhibits.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('exhibits', [], true)
+ 5 APPPATH\Controllers\ExhibitsController.php(16): view('exhibits', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ExhibitsController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ExhibitsController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-11-01 18:25:55 --> ErrorException: Undefined variable $secondary_nav_items
+[Method: GET, Route: exhibits]
+in APPPATH\Views\exhibits.php on line 16.
+ 1 APPPATH\Views\exhibits.php(16): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $secondary_nav_items', 'C:\\xampp\\htdocs\\CodeIgnitorCHS\\app\\Views\\exhibits.php', 16)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\CodeIgnitorCHS\\app\\Views\\exhibits.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('exhibits', [], true)
+ 5 APPPATH\Controllers\ExhibitsController.php(16): view('exhibits', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ExhibitsController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ExhibitsController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-11-01 18:30:34 --> ErrorException: Undefined variable $secondary_nav_items
+[Method: GET, Route: exhibits]
+in APPPATH\Views\exhibits.php on line 20.
+ 1 APPPATH\Views\exhibits.php(20): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $secondary_nav_items', 'C:\\xampp\\htdocs\\CodeIgnitorCHS\\app\\Views\\exhibits.php', 20)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\CodeIgnitorCHS\\app\\Views\\exhibits.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('exhibits', [], true)
+ 5 APPPATH\Controllers\ExhibitsController.php(16): view('exhibits', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ExhibitsController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ExhibitsController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-11-01 18:32:24 --> ErrorException: Undefined variable $secondary_nav_items_exhibits
+[Method: GET, Route: exhibits]
+in APPPATH\Views\exhibits.php on line 4.
+ 1 APPPATH\Views\exhibits.php(4): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $secondary_nav_items_exhibits', 'C:\\xampp\\htdocs\\CodeIgnitorCHS\\app\\Views\\exhibits.php', 4)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\CodeIgnitorCHS\\app\\Views\\exhibits.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('exhibits', [], true)
+ 5 APPPATH\Controllers\ExhibitsController.php(16): view('exhibits', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ExhibitsController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ExhibitsController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-11-01 18:35:07 --> ErrorException: include(path/to/secondary_nav.php): Failed to open stream: No such file or directory
+[Method: GET, Route: contact]
+in APPPATH\Views\contact.php on line 3.
+ 1 APPPATH\Views\contact.php(3): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include(path/to/secondary_nav.php): Failed to open stream: No such file or directory', 'C:\\xampp\\htdocs\\CodeIgnitorCHS\\app\\Views\\contact.php', 3)
+ 2 APPPATH\Views\contact.php(3): include()
+ 3 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\CodeIgnitorCHS\\app\\Views\\contact.php')
+ 4 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('contact', [], true)
+ 6 APPPATH\Controllers\ContactController.php(9): view('contact')
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ContactController->index()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ContactController))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-11-01 18:35:51 --> ErrorException: Undefined variable $secondary_nav_items
+[Method: GET, Route: exhibits]
+in APPPATH\Views\exhibits.php on line 20.
+ 1 APPPATH\Views\exhibits.php(20): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $secondary_nav_items', 'C:\\xampp\\htdocs\\CodeIgnitorCHS\\app\\Views\\exhibits.php', 20)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\CodeIgnitorCHS\\app\\Views\\exhibits.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('exhibits', [], true)
+ 5 APPPATH\Controllers\ExhibitsController.php(16): view('exhibits', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ExhibitsController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ExhibitsController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-11-01 18:35:56 --> ErrorException: Undefined variable $secondary_nav_items
+[Method: GET, Route: exhibits]
+in APPPATH\Views\exhibits.php on line 20.
+ 1 APPPATH\Views\exhibits.php(20): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $secondary_nav_items', 'C:\\xampp\\htdocs\\CodeIgnitorCHS\\app\\Views\\exhibits.php', 20)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\CodeIgnitorCHS\\app\\Views\\exhibits.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('exhibits', [], true)
+ 5 APPPATH\Controllers\ExhibitsController.php(16): view('exhibits', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ExhibitsController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ExhibitsController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-11-01 18:56:42 --> ErrorException: Undefined variable $nav
+[Method: GET, Route: about]
+in APPPATH\Views\secondary_nav.php on line 31.
+ 1 APPPATH\Views\secondary_nav.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $nav', 'C:\\xampp\\htdocs\\CodeIgnitorCHS\\app\\Views\\secondary_nav.php', 31)
+ 2 APPPATH\Views\about.php(18): render_secondary_nav([...], 'index')
+ 3 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\CodeIgnitorCHS\\app\\Views\\about.php')
+ 4 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('about', [], true)
+ 6 APPPATH\Controllers\AboutController.php(9): view('about')
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AboutController->index()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AboutController))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-11-01 18:57:25 --> ArgumentCountError: Too few arguments to function render_secondary_nav(), 2 passed in C:\xampp\htdocs\CodeIgnitorCHS\app\Views\about.php on line 18 and exactly 3 expected
+[Method: GET, Route: about]
+in APPPATH\Views\secondary_nav.php on line 29.
+ 1 APPPATH\Views\about.php(18): render_secondary_nav([...], 'index')
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\CodeIgnitorCHS\\app\\Views\\about.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('about', [], true)
+ 5 APPPATH\Controllers\AboutController.php(9): view('about')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AboutController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AboutController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-11-01 18:57:28 --> ArgumentCountError: Too few arguments to function render_secondary_nav(), 2 passed in C:\xampp\htdocs\CodeIgnitorCHS\app\Views\about.php on line 18 and exactly 3 expected
+[Method: GET, Route: about]
+in APPPATH\Views\secondary_nav.php on line 29.
+ 1 APPPATH\Views\about.php(18): render_secondary_nav([...], 'index')
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\CodeIgnitorCHS\\app\\Views\\about.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('about', [], true)
+ 5 APPPATH\Controllers\AboutController.php(9): view('about')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AboutController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AboutController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-11-01 18:57:38 --> ArgumentCountError: Too few arguments to function render_secondary_nav(), 2 passed in C:\xampp\htdocs\CodeIgnitorCHS\app\Views\exhibits.php on line 20 and exactly 3 expected
+[Method: GET, Route: exhibits]
+in APPPATH\Views\secondary_nav.php on line 29.
+ 1 APPPATH\Views\exhibits.php(20): render_secondary_nav([...], 'index')
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\CodeIgnitorCHS\\app\\Views\\exhibits.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('exhibits', [], true)
+ 5 APPPATH\Controllers\ExhibitsController.php(16): view('exhibits', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ExhibitsController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ExhibitsController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
